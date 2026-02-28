@@ -79,7 +79,6 @@ export class ZardEventManagerPlugin extends EventManagerPlugin {
     for (const substring of eventNameSubstrings) {
       if (substring.startsWith('{')) {
         keys = this.#extractKeys(substring);
-        continue;
       } else if (keywords.includes(substring)) {
         keyword = substring;
         break;
